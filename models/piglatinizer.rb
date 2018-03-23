@@ -9,7 +9,7 @@ class PigLatinizer
   end
 
   def piglatinize(sentence)
-    #NEED TO BE REFACTORED 
+    #NEEDS TO BE REFACTORED 
     new_sentence = []
     sentence.split(" ").each do |word|
       if word.length == 1
