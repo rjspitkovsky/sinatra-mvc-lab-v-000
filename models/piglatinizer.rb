@@ -19,7 +19,8 @@ class PigLatinizer
 
 
   def piglatinize(word)
-
+    new_sentence = [] 
+    sentence.split(" ").each do |word|
   #     # if word.length == 1
   #     #   new_word = word + "way"
   #     # elsif @@vowels.include?(word[0]) && word.length > 1
@@ -47,7 +48,7 @@ class PigLatinizer
     elsif @@vowels.include?(word[3])
       new_word = word[3..-1] + word[0..2] + "ay"
     end
-    new_word
+    new_sentence << new_word
   end
-
+  new_sentence
 end
