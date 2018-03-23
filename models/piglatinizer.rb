@@ -20,9 +20,11 @@ class PigLatinizer
 
   def piglatinize(word)
 
-    if @@vowels.include?(word[0])
-      new_word = word + "way"
-    else 
+      if word.length == 1
+        new_word = word + "way"
+      elsif @@vowels.include?(word[0]) && word.length > 1
+        new_word = word + "way"
+      end 
 
     word.each_char.with_index(0) do |letter, i|
       if @@vowels.include?(letter)
@@ -30,7 +32,7 @@ class PigLatinizer
       end
     end
     new_word
-  end 
+  end
   #
   #   if word.length == 1
   #     new_word = word + "way"
