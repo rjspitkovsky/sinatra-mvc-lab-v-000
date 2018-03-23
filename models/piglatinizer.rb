@@ -22,7 +22,7 @@ class PigLatinizer
 
     if @@vowels.include?(word[0])
       new_word = word + "way"
-    end
+    else 
 
     word.each_char.with_index(0) do |letter, i|
       if @@vowels.include?(letter)
