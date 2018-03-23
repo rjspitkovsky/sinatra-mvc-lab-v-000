@@ -4,12 +4,12 @@ class PigLatinizer
 
   @@vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
 
-  def initialize
+  def initialize(text = nil)
     @text = text
   end
 
   def piglatinize(sentence)
-    #NEEDS TO BE REFACTORED 
+    #NEEDS TO BE REFACTORED
     new_sentence = []
     sentence.split(" ").each do |word|
       if word.length == 1
