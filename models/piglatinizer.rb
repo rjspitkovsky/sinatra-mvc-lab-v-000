@@ -19,7 +19,7 @@ class PigLatinizer
 
 
   def piglatinize(word)
-    new_sentence = [] 
+    new_sentence = []
     sentence.split(" ").each do |word|
   #     # if word.length == 1
   #     #   new_word = word + "way"
@@ -50,5 +50,5 @@ class PigLatinizer
     end
     new_sentence << new_word
   end
-  new_sentence
+  new_sentence.join
 end
