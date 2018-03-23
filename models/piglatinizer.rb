@@ -50,6 +50,6 @@ class PigLatinizer
     end
     new_sentence << new_word
   end
-  new_sentence.join
+  new_sentence.join(" ")
 end
-end 
+end
