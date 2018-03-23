@@ -8,17 +8,17 @@ class PigLatinizer
     @text = text
   end
 
-  def piglatinize_sentence(sentence)
+  # def piglatinize_sentence(sentence)
+  #
+  #   sentence.split(" ").each do |word|
+  #     puts piglatinize(word)
+  #   end
+  #
+  # end
 
-    sentence.split(" ").each do |word|
-      puts piglatinize(word)
-    end
-
-  end
 
 
-
-  def piglatinize(word)
+  def piglatinize(sentence)
     new_sentence = []
     sentence.split(" ").each do |word|
   #     # if word.length == 1
@@ -52,3 +52,4 @@ class PigLatinizer
   end
   new_sentence.join
 end
+end 
