@@ -24,11 +24,11 @@ class PigLatinizer
         new_word = word + "way"
       elsif @@vowels.include?(word[0]) && word.length > 1
         new_word = word + "way"
-      end 
+      end
 
     word.each_char.with_index(0) do |letter, i|
       if @@vowels.include?(letter)
-        new_word = word[i..-1] + word[0..i-1] + "ay"
+        new_word = word[i..-1] + word[0...i] + "ay"
       end
     end
     new_word
